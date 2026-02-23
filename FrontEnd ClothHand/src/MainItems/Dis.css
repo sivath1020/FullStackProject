@@ -1,0 +1,63 @@
+/* ========== PRICE STYLE (MODERN) ========== */
+.old-price {
+  text-decoration: line-through;
+  color: #9aa0a6;
+  font-size: 13px;
+  margin-right: 6px;
+}
+
+.new-price {
+  color: #d62828;
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* ========== OFFER BADGE (PILL STYLE + GLOW) ========== */
+.offer-badge {
+  background: linear-gradient(135deg, #2a9d8f, #1f776d);
+  color: #fff;
+  padding: 5px 12px;
+  font-size: 11px;
+  border-radius: 999px; /* pill shape */
+  display: inline-block;
+  margin: 6px 0;
+  box-shadow: 0 4px 10px rgba(42, 157, 143, 0.4);
+  animation: popIn 0.5s ease;
+}
+
+/* ========== CATEGORY BADGE (FLOAT TAG STYLE) ========== */
+.category-badge {
+  background: linear-gradient(135deg, #f4a261, #e76f51);
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 11px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 8px;
+  box-shadow: 0 4px 8px rgba(244, 162, 97, 0.4);
+  animation: slideIn 0.5s ease;
+}
+
+/* ========== BADGE ANIMATIONS ========== */
+@keyframes popIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

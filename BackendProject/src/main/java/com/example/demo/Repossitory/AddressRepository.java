@@ -1,0 +1,15 @@
+package com.example.demo.Repossitory;
+
+
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.example.demo.Model.Address;
+
+public interface AddressRepository extends JpaRepository<Address, Long> {
+
+    List<Address> findByUserEmail(String userEmail);
+}
+

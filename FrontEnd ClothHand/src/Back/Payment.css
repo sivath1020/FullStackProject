@@ -1,0 +1,72 @@
+.pay-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #4d7583, #1f3c47);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pay-title {
+  color: #0e0606;
+background-color: 0;
+  margin-bottom: 20px;
+}
+
+.pay-form {
+  background: #fff;
+  padding: 30px;
+  width: 360px;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+.pay-form label {
+  display: block;
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+.pay-form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.pay-row {
+  display: flex;
+  gap: 12px;
+}
+
+.pay-field {
+  flex: 1;
+}
+
+.pay-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background: #4d7583;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.pay-btn:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+.pay-message {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #f34848;
+}
+.pay-btn:hover{
+   background-color: lightblue;
+color: black;
+}
